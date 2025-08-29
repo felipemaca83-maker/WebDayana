@@ -284,7 +284,7 @@
   <div class="pantalla" id="pantalla2">
     <audio id="backgroundAudio" loop>
       <source
-        src="https://www.dropbox.com/scl/fi/dd63wtzzvl22fc1ue9qll/Iframe-Ben-E.-King-Stand-By-Me-Letra-Video-einn_UJgGGM.mp3?rlkey=9tc8v2qvc5y3r9v01z20cm6go&st=4sk76t8m&raw=1"
+        src="https://www.dropbox.com/scl/fi/ma9rlcj0rdmqnsiof2k7x/Passenger-Let-Her-Go-Official-Video.mp3?rlkey=q8gjycafvt65vtfjkko4g5x7i&st=oi6e7xyv&raw=1"
         type="audio/mpeg">
       Tu navegador no soporta audio.
     </audio>
@@ -329,8 +329,9 @@
         </div>
         <div class="slide">
           <img
-            src="https://www.dropbox.com/scl/fi/vnw4nblj28h8382pyb41w/hrecordar.jpg?rlkey=29mlojzm88fg9wbb9vgu6evs0&st=myky3myp&raw=1"
-            alt="Recuerdo 3">
+          src="https://www.dropbox.com/scl/fi/vnw4nblj28h8382pyb41w/hrecordar.jpg?rlkey=29mlojzm88fg9wbb9vgu6evs0&st=myky3myp&raw=1"
+          alt="Recuerdo 3">
+          <h1>⬇⬇⬇</h1>
             <button class="siguiente-carrusel">Aquí nuestra primer salida 🍻</button>
         </div>
         <div class="dots"></div>
@@ -410,11 +411,12 @@
             src="https://www.dropbox.com/scl/fi/vhkv8aj14za7bplcnpipq/f10.jpg?rlkey=m50pag5wwl12rnnhrlzzuf6sp&st=oj47eube&raw=1"
             alt="Recuerdo 12">
           <h1>Dormida por milésima vez😴<h1>
-        </div>
-        <div class="slide">
-          <img
+          </div>
+          <div class="slide">
+            <img
             src="https://www.dropbox.com/scl/fi/h2gsaajlomaljmkmys30f/finsalida.jpg?rlkey=oc01d78vswys73tc7tu7xqt06&st=ql9a0qxn&raw=1"
             alt="Recuerdo 12">
+            <h1>⬇⬇⬇<h1>
             <button class="siguiente-carrusel">Ver el inicio de una historia ✍🏼</button>
         </div>
         <div class="dots"></div>
@@ -483,11 +485,12 @@
             src="https://www.dropbox.com/scl/fi/5gwvqqqwps640d8bwg52h/s11.jpg?rlkey=d50xltf1li0r0mnwmqy52jy33&st=5khy85tk&raw=1"
             alt="Recuerdo 14">
           <h1>Y agradezco infinitamente a la vida por cruzarte en mi camino ✨<h1>
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
           <img
             src="https://www.dropbox.com/scl/fi/g4zfwfwgygdav9q3n6loe/hultima.jpg?rlkey=cpq1jj0exrn6m1b0vept1q68f&st=qincouhp&raw=1"
             alt="Recuerdo 14">
+            <h1>⬇⬇⬇<h1>
             <button onclick="siguientePantalla(3)">Ver mensaje final 💌</button>
         </div>
 
@@ -619,7 +622,7 @@
       
       No soy de decir este tipo de cosas, pero tu lo vales, rompes todas esas barreras y te lo agradezco, porque gracias a eso soy mejor cada día, en todos los aspectos.
       
-      Att: Felipe 😎
+      Att: Felipe, el mejor que pudiste encontar 😎
       
       Pstd: Hacer esto me tomo muchas noches, una vez me preguntaste sobre de que trataba mi trabajo, esto es un poco de lo que hago, diseñe y cree esto para ti, me inspiras a esto y mucho más 💕`;
 
@@ -632,9 +635,9 @@
         if (i < messageText.length) {
           messageEl.textContent += messageText.charAt(i);
           i++;
-          let delay = 90; // antes 40
-          if (",💵".includes(messageText.charAt(i - 1))) delay = 750; // antes 250
-          if (".✨😍".includes(messageText.charAt(i - 1))) delay = 1000; // antes 400
+          let delay = 80; // antes 40
+          if (",💵".includes(messageText.charAt(i - 1))) delay = 650; // antes 250
+          if (".✨😍".includes(messageText.charAt(i - 1))) delay = 9000; // antes 400
           setTimeout(typeMessage, delay);
         } else {
           document.getElementById("readButton").style.display = "inline-block";
