@@ -22,6 +22,9 @@
       align-items: center;
       min-height: 100vh;
       padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
 
     .pantalla.activa {
@@ -110,7 +113,7 @@
 
     /* Pantalla 3 */
     .mensaje-final {
-      font-size: 1.3rem;
+      font-size: 1rem;
       max-width: 600px;
       position: relative;
       white-space: pre-line;
@@ -175,6 +178,11 @@
     }
 
     .typewriter {
+      display: block;
+      max-width: 100%;
+      word-break: break-word;
+      margin: 0.5rem auto;
+      padding: 0 1rem;
       border-right: 2px solid #fff;
       white-space: nowrap;
       overflow: hidden;
@@ -593,9 +601,9 @@ Diseñe y cree esto para ti, me isnpiras a esto y mucho mas 💕`;
         if (i < messageText.length) {
           messageEl.textContent += messageText.charAt(i);
           i++;
-          let delay = 40;
-          if (",💵".includes(messageText.charAt(i - 1))) delay = 250;
-          if (".✨😍".includes(messageText.charAt(i - 1))) delay = 400;
+          let delay = 60; // antes 40
+          if (",💵".includes(messageText.charAt(i - 1))) delay = 350; // antes 250
+          if (".✨😍".includes(messageText.charAt(i - 1))) delay = 500; // antes 400
           setTimeout(typeMessage, delay);
         } else {
           document.getElementById("readButton").style.display = "inline-block";
