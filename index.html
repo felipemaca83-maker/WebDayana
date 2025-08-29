@@ -635,7 +635,7 @@
         if (i < messageText.length) {
           messageEl.textContent += messageText.charAt(i);
           i++;
-          let delay = 80; // antes 40
+          let delay = 40; // antes 40
           if (",💵".includes(messageText.charAt(i - 1))) delay = 650; // antes 250
           if (".✨😍".includes(messageText.charAt(i - 1))) delay = 9000; // antes 400
           setTimeout(typeMessage, delay);
