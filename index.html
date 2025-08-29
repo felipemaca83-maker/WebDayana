@@ -201,6 +201,11 @@
         font-size: 16px;
       }
 
+      .dot {
+        width: 20px;
+        height: 20px;
+      }
+
       .pantalla {
         padding: 1rem;
       }
@@ -213,10 +218,10 @@
         font-size: 1.2rem;
       }
 
-      button {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-      }
+       button {
+    min-width: 44px;
+    min-height: 44px;
+  }
 
       .carrusel-seccion {
         width: 90%;
@@ -458,7 +463,7 @@
 
   <!-- Pantalla 3 -->
   <div class="pantalla" id="pantalla3">
-    <video autoplay muted loop class="background-video">
+    <video autoplay muted loop playsinline class="background-video">
       <source
         src="https://www.dropbox.com/scl/fi/erv0pjgvoc4ma04ol7d8a/vfinal.mov?rlkey=zjl3bjk65z2n0gl7vw831jyx2&st=o7c38krh&raw=1"
         type="video/mp4">
